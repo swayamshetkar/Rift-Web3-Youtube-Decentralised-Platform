@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+supabase
+requests
+py-algorand-sdk
+pyteal
+python-dotenv
+pydantic
+pydantic-settings
+apscheduler
+passlib
+python-multipart
+httpx
+pytest
+python-jose[cryptography]

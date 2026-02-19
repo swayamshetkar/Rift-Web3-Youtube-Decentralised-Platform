@@ -1,0 +1,138 @@
+#pragma version 6
+txn ApplicationID
+int 0
+==
+bnz main_l16
+txn OnCompletion
+int DeleteApplication
+==
+bnz main_l15
+txn OnCompletion
+int UpdateApplication
+==
+bnz main_l14
+txn OnCompletion
+int CloseOut
+==
+bnz main_l13
+txn OnCompletion
+int OptIn
+==
+bnz main_l12
+txna ApplicationArgs 0
+byte "update_wallet"
+==
+bnz main_l11
+txna ApplicationArgs 0
+byte "optin_asset"
+==
+bnz main_l10
+txna ApplicationArgs 0
+byte "settle"
+==
+bnz main_l9
+err
+main_l9:
+txn Sender
+byte "admin"
+app_global_get
+==
+assert
+int 2
+txnas Accounts
+byte "platform_wallet"
+app_global_get
+==
+assert
+itxn_begin
+int axfer
+itxn_field TypeEnum
+txna Assets 0
+itxn_field XferAsset
+int 1
+txnas Accounts
+itxn_field AssetReceiver
+txna ApplicationArgs 1
+btoi
+txna ApplicationArgs 1
+btoi
+int 200
+*
+int 10000
+/
+-
+itxn_field AssetAmount
+itxn_next
+int axfer
+itxn_field TypeEnum
+txna Assets 0
+itxn_field XferAsset
+int 2
+txnas Accounts
+itxn_field AssetReceiver
+txna ApplicationArgs 1
+btoi
+int 200
+*
+int 10000
+/
+itxn_field AssetAmount
+itxn_submit
+int 1
+return
+main_l10:
+txn Sender
+byte "admin"
+app_global_get
+==
+assert
+itxn_begin
+int axfer
+itxn_field TypeEnum
+txna Assets 0
+itxn_field XferAsset
+global CurrentApplicationAddress
+itxn_field AssetReceiver
+int 0
+itxn_field AssetAmount
+itxn_submit
+int 1
+return
+main_l11:
+txn Sender
+byte "admin"
+app_global_get
+==
+assert
+byte "platform_wallet"
+txna Accounts 1
+app_global_put
+int 1
+return
+main_l12:
+int 1
+return
+main_l13:
+int 1
+return
+main_l14:
+txn Sender
+byte "admin"
+app_global_get
+==
+return
+main_l15:
+txn Sender
+byte "admin"
+app_global_get
+==
+return
+main_l16:
+byte "admin"
+txn Sender
+app_global_put
+byte "platform_wallet"
+txn Sender
+app_global_put
+int 1
+return
