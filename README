@@ -428,15 +428,7 @@ npm run build
 | **No transcoding** | Uploaded videos are served as-is — no adaptive bitrate streaming (HLS/DASH) |
 | **No thumbnail generation** | Thumbnails are not auto-generated; creators must rely on defaults |
 
-### Backend & Infrastructure
 
-| Limitation | Details |
-|------------|---------|
-| **Centralized backend** | FastAPI server is a single point of failure; not fully decentralized |
-| **HF Spaces hosting** | Backend runs on Hugging Face Spaces free tier — limited compute, cold starts, and no SLA |
-| **No horizontal scaling** | Single-instance deployment with no load balancing or auto-scaling |
-| **Basic anti-fraud** | View validation uses device fingerprinting + minimum watch time; no advanced bot detection |
-| **Short JWT lifetime** | 15-minute JWT tokens with no automatic refresh flow on the frontend |
 
 ### Frontend & UX
 
@@ -492,6 +484,13 @@ npm run build
 ---
 
 <div align="center">
+
+Team name : CoreMates
+Team Members : 
+1. Swayam Shetkar
+2. Avyum Chhetri
+3. Madhan BV
+4. Samhith V Gupta
 
 **Built with ❤️ on Algorand**
 
