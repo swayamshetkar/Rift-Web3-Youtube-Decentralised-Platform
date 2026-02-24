@@ -483,12 +483,12 @@ npm run build
 
 ---
 
+
+
+<div align="center">
 -->> Authors
 
 Swayam Shetkar — Developer, Architect, Cybersecurity , AI & Blockchain Enthusiast
-
-<div align="center">
-
 
 
 
@@ -496,4 +496,3 @@ Swayam Shetkar — Developer, Architect, Cybersecurity , AI & Blockchain Enthusi
 [Frontend](https://your-app.vercel.app) · [Backend API](https://swayamshetkar-rift-backend-blockchain.hf.space) · [Algorand Explorer](https://testnet.algoexplorer.io)
 
 </div>
-]]>
