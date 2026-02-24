@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎥 RIFT — Web3 Video Ad Platform
+#  RIFT — Web3 Video Ad Platform
 
 **Decentralized Ad-Based Video Platform on Algorand**
 
@@ -45,7 +45,7 @@
 
 ---
 
-## 🔐 Authentication Flow
+##  Authentication Flow
 
 Wallet-based authentication using **Algorand signature verification** — no passwords, no emails.
 
@@ -179,16 +179,16 @@ https://gateway.pinata.cloud/ipfs/<CID>
 
 ---
 
-## 💰 Reward System
+##  Reward System
 
 ### Economic Actors
 
 | Role | Earns From | Pays |
 |------|-----------|------|
-| 🎬 **Creator** | Views + Ad Revenue | — |
-| 👀 **Viewer** | Future token rewards (optional) | — |
-| 📢 **Advertiser** | — | Campaign budget |
-| 🏛 **Platform** | 5% fee on settlements | — |
+|  **Creator** | Views + Ad Revenue | — |
+|  **Viewer** | Future token rewards (optional) | — |
+|  **Advertiser** | — | Campaign budget |
+|  **Platform** | 5% fee on settlements | — |
 
 ### Reward Calculation
 
@@ -241,7 +241,7 @@ def send_reward(private_key, receiver, amount):
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 rift-platform/
@@ -301,7 +301,7 @@ rift-platform/
 
 ---
 
-## 🌐 API Endpoints
+##  API Endpoints
 
 ### Auth
 
@@ -407,7 +407,7 @@ npm run build
 
 ---
 
-## ⚠️ Known Limitations
+##  Known Limitations
 
 ### Blockchain & Wallet
 
@@ -450,20 +450,20 @@ npm run build
 
 ---
 
-## 🔮 Future Roadmap
+##  Future Roadmap
 
 | Feature | Status |
 |---------|--------|
-| Smart contract–controlled rewards | 🔜 Planned |
-| ASA token launch (ADMC) | 🔜 Planned |
-| Storage relayer staking | 💡 Idea |
-| Anti-bot AI detection | 💡 Idea |
-| On-chain creator balances | 💡 Idea |
-| Viewer token rewards | 💡 Idea |
+| Smart contract–controlled rewards |  Planned |
+| ASA token launch (ADMC) |  Planned |
+| Storage relayer staking |  Idea |
+| Anti-bot AI detection |  Idea |
+| On-chain creator balances |  Idea |
+| Viewer token rewards |  Idea |
 
 ---
 
-## 🔄 Full System Flow
+##  Full System Flow
 
 ```
 ┌──────────┐     ┌──────────┐     ┌──────────┐     ┌──────────┐     ┌──────────┐
@@ -483,16 +483,15 @@ npm run build
 
 ---
 
+-->> Authors
+
+Swayam Shetkar — Developer, Architect, Cybersecurity , AI & Blockchain Enthusiast
+
 <div align="center">
 
-Team name : CoreMates
-Team Members : 
-1. Swayam Shetkar
-2. Avyum Chhetri
-3. Madhan BV
-4. Samhith V Gupta
 
-**Built with ❤️ on Algorand**
+
+
 
 [Frontend](https://your-app.vercel.app) · [Backend API](https://swayamshetkar-rift-backend-blockchain.hf.space) · [Algorand Explorer](https://testnet.algoexplorer.io)
 
